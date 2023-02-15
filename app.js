@@ -16,9 +16,15 @@ function randomDomain (arrayPronoun, arrayAdj, arrayNoun, arrayWebsite) {
     return randomValue(arrayPronoun) + '' + randomValue(arrayAdj) + '' + randomValue(arrayNoun) + '' + randomValue(arrayWebsite);
 }
 
-for (let index = 0; index < 8; index++) {
-    console.log (randomDomain(pronoun, adj, noun, website));
-    
+
+for (let one of pronoun) {
+    for (let two of adj) {
+        for (let three of noun){
+            for (let four of website) {
+                console.log(one+two+three+four);
+            }
+        }
+    }
 }
         
 
